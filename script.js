@@ -1,18 +1,11 @@
-\document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     emailjs.init('sMNDwueuZxnqBhT13');
     
     const cotizarButton = document.getElementById('solicitar-cotizare');
-    const modal = document.getElementById('cotizare');
-    const closeModal = document.querySelector('.close');
-    
     cotizarButton.addEventListener('click', function () {
-        modal.style.display = 'flex';
+        // Si deseas agregar algún comportamiento al presionar el botón, lo puedes agregar aquí.
     });
     
-    closeModal.addEventListener('click', function () {
-        modal.style.display = 'none';
-    });
-
     const cotizacionForm = document.getElementById('cotizare-form');
     cotizacionForm.addEventListener('submit', function (e) {
         e.preventDefault(); 
@@ -30,7 +23,6 @@
             .then(function (response) {
                 alert('Solicitarea ta a fost trimisă cu succes! Te vom contacta în curând.');
                 cotizacionForm.reset();
-                modal.style.display = 'none';
             }, function (error) {
                 alert('A apărut o eroare. Te rugăm să încerci din nou mai târziu.');
             });

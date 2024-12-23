@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piscine AquaDream</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -18,55 +19,52 @@
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <section class="hero">
             <h2>Transformă-ți spațiul cu piscinele noastre de vis!</h2>
-            <p>Design personalizat, materiale de înaltă calitate și echipa noastră de profesioniști.</p>
-            <a href="javascript:void(0);" class="btn" id="solicitar-cotizare">Solicită o cotizație</a>
+            <p>Design personalizat, materiale de înaltă calitate și cea mai bună echipă de profesioniști.</p>
+            <button id="solicitar-cotizare" class="btn">Solicită Cotizație</button>
         </section>
-
-        <!-- Formular de cotizație -->
-        <section class="cotizare" id="cotizare" style="display:none;">
-            <h2>Solicită o Cotizație</h2>
-            <form id="cotizare-form">
-                <label for="nume">Nume:</label>
-                <input type="text" id="nume" name="nume" required><br><br>
-
-                <label for="telefon">Număr de telefon:</label>
-                <input type="tel" id="telefon" name="telefon" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <button type="submit" class="btn">Trimite</button>
-            </form>
-        </section>
-
+        
         <section class="services">
             <h2>Serviciile noastre</h2>
             <div class="service-cards">
                 <div class="card">
-                    <h3>Întreținere</h3>
-                    <p>Actualizați și îmbunătățiți piscina existentă.</p>
+                    <h3>Întreţinere</h3>
+                    <p>Actualizați și îmbunătățiți piscina dumneavoastră existentă.</p>
                 </div>
                 <div class="card">
                     <h3>Construcție</h3>
-                    <p>Modele unice, adaptate nevoilor dumneavoastră.</p>
+                    <p>Modele unice adaptate nevoilor tale.</p>
                 </div>
                 <div class="card">
                     <h3>Consultanță</h3>
-                    <p>Vă ghidăm în fiecare pas al proiectului dumneavoastră.</p>
+                    <p>Te ghidăm în fiecare pas al proiectului tău.</p>
                 </div>
             </div>
         </section>
+        
+        <div id="cotizare" style="display: none;">
+            <form id="cotizare-form">
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required>
+                
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon" name="telefon" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Trimite Cotizație</button>
+            </form>
+        </div>
     </main>
-
+    
     <footer>
         <p>&copy; 2024 Piscine AquaDream. Toate drepturile rezervate.</p>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="app.js"></script> <!-- Fișierul JS -->
+    <script src="app.js"></script>
 </body>
 </html>

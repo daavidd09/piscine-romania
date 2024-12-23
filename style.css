@@ -36,8 +36,6 @@ nav ul li a:hover {
 
 .hero {
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1572760976028-1adf3c5f417e?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
-
     background-size: cover;
     height: 400px;
     display: flex;

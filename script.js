@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cotizarButton = document.getElementById('solicitar-cotizare');
     cotizarButton.addEventListener('click', function () {
-        document.getElementById('cotizare-modal').style.display = 'block';
+        // Mostrar la ventana modal cuando se hace clic en el botón
+        document.getElementById('cotizare-modal').style.display = 'flex'; /* Mostrar el modal */
     });
 
     const closeButton = document.getElementsByClassName('close')[0];
     closeButton.addEventListener('click', function () {
+        // Cerrar el modal cuando se hace clic en el botón de cerrar
         document.getElementById('cotizare-modal').style.display = 'none';
     });
 
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const telefon = document.getElementById('telefon').value;
         const email = document.getElementById('email').value;
 
-        // Actualizează tabelul din fereastra modală cu datele introduse
+        // Actualizamos la tabla en la ventana modal con los datos ingresados
         document.getElementById('modal-nume').textContent = nume;
         document.getElementById('modal-telefon').textContent = telefon;
         document.getElementById('modal-email').textContent = email;
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(function (response) {
                 alert('Solicitarea ta a fost trimisă cu succes! Te vom contacta în curând.');
                 cotizacionForm.reset();
-                document.getElementById('cotizare-modal').style.display = 'none';
+                document.getElementById('cotizare-modal').style.display = 'none'; /* Ocultar la modal después de enviar */
             }, function (error) {
                 alert('A apărut o eroare. Te rugăm să încerci din nou mai târziu.');
             });

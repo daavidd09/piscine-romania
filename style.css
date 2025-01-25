@@ -1,4 +1,8 @@
 /* Stiluri pentru fereastra modală */
+.modal h3{
+    text-align: center;
+    font-size:10px;
+}
 .modal {
     display: none; /* Ascunde modalul pe default */
     position: fixed;

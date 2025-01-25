@@ -59,6 +59,11 @@ button {
 button:hover {
     background-color: #45a049;
 }
+.logo{ 
+    font-size: 20px;
+    text-align: left;
+    background-color: #ffffff;
+}
 
    h1 {
     color:rgb(0, 13, 255);

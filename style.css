@@ -1,5 +1,5 @@
 /* Stiluri pentru fereastra modală */
-.modal h3{
+   h4 {
     text-align: center;
     font-size:10px;
 }
@@ -63,7 +63,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
-.logo{ 
+ img { 
     font-size: 20px;
     text-align: left;
     background-color: #ffffff;

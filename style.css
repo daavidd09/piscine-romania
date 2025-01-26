@@ -5,6 +5,8 @@
 }
 .servicios {
     display: flex;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 .modal {
     display: none; /* Ascunde modalul pe default */

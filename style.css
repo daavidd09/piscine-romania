@@ -5,8 +5,21 @@
 }
 .servicios {
     display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #ffffff;
     font-size: 25px;
     text-transform: uppercase;
+}
+.servicios a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.servicios a:hover{
+    text-decoration: underline;
+    text-decoration: blue;
 }
 .modal {
     display: none; /* Ascunde modalul pe default */

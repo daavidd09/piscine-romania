@@ -3,6 +3,9 @@
     text-align: center;
     font: size 40px;
 }
+.servicios {
+    display: flex;
+}
 .modal {
     display: none; /* Ascunde modalul pe default */
     position: fixed;

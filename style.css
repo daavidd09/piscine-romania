@@ -21,7 +21,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 60%; /* Lățime a modalului */
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .close {
@@ -64,7 +64,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
- img { 
+ .logoEmpresa { 
     font-size: 20px;
     text-align: left;
     background-color: #ffffff;

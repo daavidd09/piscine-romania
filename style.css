@@ -13,13 +13,13 @@
 }
 .servicios a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color:black;
     font-weight: bold;
     transition: 0.3s;
 }
 .servicios a:hover{
     text-decoration: underline;
-    text-decoration: blue;
+    color: blue;
 }
 .modal {
     display: none; /* Ascunde modalul pe default */

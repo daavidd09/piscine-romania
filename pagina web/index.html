@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dama's dream</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container"
+            <img src="images/logopaginaweb.png" alt="Logo de la empresa" class="logoEmpresa">
+            <h1>Dama's Dream</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="servicios">
+                    <div><a href="#">Inceput</a>
+                    </div>
+                    <div>
+                    <a href="#">Servicii</a>
+                    </div>
+                    <div>
+                    <a href="#">Galerie</a>
+                    </div>
+                    <div>
+                    <a href="#">Contact</a>
+                    </div>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Transformă-ți spațiul cu piscinele noastre de vis!</h2>
+            <p>Design personalizat, materiale de înaltă calitate și cea mai bună echipă de profesioniști.</p>
+            <button id="solicitar-cotizare" class="btn">Solicită Cotizație</button>
+        </section>
+        
+        <section class="services">
+            <h2>Serviciile noastre</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Întreţinere</h3>
+                    <p>Actualizați și îmbunătățiți piscina dumneavoastră existentă.</p>
+                </div>
+                <div class="card">
+                    <h3>Construcție</h3>
+                    <p>Modele unice adaptate nevoilor tale.</p>
+                </div>
+                <div class="card">
+                    <h3>Consultanță</h3>
+                    <p>Te ghidăm în fiecare pas al proiectului tău.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fereastra Modală cu tabel -->
+        <div id="cotizare-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Informații Cotizație</h4>
+                <form id="cotizare-form">
+                    <label for="Nume">Nume:</label>
+                    <input type="text" id="Nume" name="Nume" required>
+                    
+                    <label for="Telefon">Telefon:</label>
+                    <input type="text" id="Telefon" name="Telefon" required>
+                    
+                    <label for="Email">Email:</label>
+                    <input type="Email" id="Email" name="Email" required>
+                    
+                    <button type="submit">Trimite Cotizație</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Piscine Dama's Dream. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

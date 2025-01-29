@@ -1,27 +1,35 @@
 /* Stiluri pentru fereastra modală */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap');
  
+#fraseInicio {
+text-align: center;
+color: black;
+font-size: 40px;
+}
 h4 {
     text-align: center;
     font: size 40px;
 }
+#PieDePagina{
+    text-align: center;
+}
 .servicios {
     display: flex;
-    gap: 20px;
+    gap: 200px;
     justify-content: center;
     background-color: #ffffff;
-    font-size: 25px;
+    font-size: 100px;
     text-transform: uppercase;
 }
 .servicios a {
     text-decoration: none;
     color:black;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.15s;
 }
 .servicios a:hover{
     text-decoration: underline;
-    color: blue;
+    color: rgb(0, 17, 255);
 }
 .modal {
     display: none; /* Ascunde modalul pe default */
@@ -88,18 +96,18 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 50px;
     padding: 10px 20px; 
 }
 .logoEmpresa { 
-    width: 60px;
+    width: 150px;
     height: auto;
 }
 h1 {
     color: #0077b6;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 119, 182, 0.3);
-    font-size: 40px;
+    font-size: 75px;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }

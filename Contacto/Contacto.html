@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Dama's Dreams</title>
+    <link rel="stylesheet" href="Contacto.css">
+</head>
+<body>
+    <header>
+        <div class="fondoheader">
+            <div class="header-container">
+                <img src="images/logopaginawebsinfondo.png" alt="Logo de la empresa" class="logoEmpresa" >
+                <h1>Dama's Dream</h1> 
+            </div>
+            <section id="FraseInicio">
+                <h2>Contactează-ne!</h2>
+            </section>
+        </div> 
+    </header>
+    <main>
+        <section class="hero">
+            <button id="solicitar-cotizare" class="btn">Solicită Cotizație</button>
+        </section>
+    
+        <!-- Fereastra Modală cu tabel -->
+        <div id="cotizare-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Informații Cotizație</h4>
+                <form id="cotizare-form" action="https://formsubmit.co/damasdreampools@gmail.com" method="POST">
+                    <input type="text" id="nume" placeholder="Nume" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="number" id="telefon" placeholder="Nr. de telefon" required>
+                    <button type="submit">Trimite cotizare</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="PieDePagina";
+             <p>&copy; 2024 Piscine Dama's Dream. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    <script src="contacto.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+</html>

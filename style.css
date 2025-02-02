@@ -8,18 +8,16 @@
 .card p {
     font-size: 15px;
 }
-.fondoheader {
-    background-color:rgb(249, 249, 249);
-}
 .service-cards h3 {
     text-align: left;
     font-size: 25px;
 }
+.nav{
+    margin-top: 0px;
+    padding-top: 0px;
+}
 #FraseInicio {
 margin-bottom: 0px;
-padding: 0px;
-text-decoration-line: underline;
-text-decoration-thickness: 15px;
 font-weight: 450px;
 text-shadow: 2px 2px 5px rgba(0, 119, 182, 0.3);
 font-family: 'Playfair Display', serif;
@@ -43,7 +41,6 @@ h4 {
     min-height: 0px;
     gap: 250px;
     justify-content: center;
-    background-color: #ffffff;
     font-size: 100px;
     text-transform: uppercase;
 }
@@ -141,4 +138,7 @@ h1 {
 }
 nav a {
     font-size: 14px;
+}
+body {
+background-size: auto 1298px;
 }

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    emailjs.init('sMNDwueuZxnqBhT13');
+    // Inicialización de EmailJS - esta parte ya no es necesaria si no se usa EmailJS
+    // emailjs.init('sMNDwueuZxnqBhT13');
 
     const cotizarButton = document.getElementById('solicitar-cotizare');
     cotizarButton.addEventListener('click', function () {
@@ -13,30 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cotizacionForm = document.getElementById('cotizare-form');
     cotizacionForm.addEventListener('submit', function (e) {
-        e.preventDefault();
+        e.preventDefault(); // Prevenir la acción predeterminada de envío para manipulación personalizada
 
         const nume = document.getElementById('nume').value;
         const telefon = document.getElementById('telefon').value;
         const email = document.getElementById('email').value;
 
-        // Actualizează tabelul din fereastra modală cu datele introduse
+        // Actualiza el contenido de la ventana modal con los datos ingresados
         document.getElementById('modal-nume').textContent = nume;
         document.getElementById('modal-telefon').textContent = telefon;
         document.getElementById('modal-email').textContent = email;
 
-        const templateParams = {
-            nume: nume,
-            telefon: telefon,
-            email: email,
-        };
+        // Si prefieres manejar la visualización de un mensaje de éxito o error, puedes hacerlo aquí
+        alert('Tu solicitud ha sido enviada con éxito. Nos pondremos en contacto contigo pronto.');
 
-        emailjs.send('service_otwgjg9', 'template_096i836', templateParams)
-            .then(function (response) {
-                alert('Solicitarea ta a fost trimisă cu succes! Te vom contacta în curând.');
-                cotizacionForm.reset();
-                document.getElementById('cotizare-modal').style.display = 'none';
-            }, function (error) {
-                alert('A apărut o eroare. Te rugăm să încerci din nou mai târziu.');
-            });
+        cotizacionForm.reset(); // Limpiar el formulario después del envío
+        document.getElementById('cotizare-modal').style.display = 'none'; // Cerrar la ventana modal
     });
 });

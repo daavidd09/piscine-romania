@@ -1,10 +1,32 @@
 /* Stiluri pentru fereastra modală */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap');
- 
+
+.services h2{
+    text-align: center;
+    font-size: 40px;
+}
+.card p {
+    font-size: 15px;
+}
+.fondoheader {
+    background-color:rgb(249, 249, 249);
+}
+.service-cards h3 {
+    text-align: left;
+    font-size: 25px;
+}
 #FraseInicio {
+margin-bottom: 0px;
+padding: 0px;
+text-decoration-line: underline;
+text-decoration-thickness: 15px;
+font-weight: 450px;
+text-shadow: 2px 2px 5px rgba(0, 119, 182, 0.3);
+font-family: 'Playfair Display', serif;
+text-transform: uppercase;
 text-align: center;
 color: black;
-font-size: 40px;
+font-size: 30px;
 }
 h4 {
     text-align: center;
@@ -15,13 +37,18 @@ h4 {
 }
 .servicios {
     display: flex;
-    gap: 200px;
+    padding: 0px;
+    align-items:flex-start;
+    flex-direction: row;
+    min-height: 0px;
+    gap: 250px;
     justify-content: center;
     background-color: #ffffff;
     font-size: 100px;
     text-transform: uppercase;
 }
 .servicios a {
+    font-size: 30px;
     text-decoration: none;
     color:black;
     font-weight: bold;
@@ -92,6 +119,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
 .header-container {
     display: flex;
     align-items: center;

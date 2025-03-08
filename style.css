@@ -5,13 +5,6 @@
     text-align: center;
     font-size: 40px;
 }
-.card p {
-    font-size: 15px;
-}
-.service-cards h3 {
-    text-align: left;
-    font-size: 25px;
-}
 .nav{
     margin-top: 0px;
     padding-top: 0px;
@@ -43,6 +36,7 @@ h4 {
     justify-content: center;
     font-size: 100px;
     text-transform: uppercase;
+    margin-top: -150px;
 }
 .servicios a {
     font-size: 30px;
@@ -111,8 +105,13 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-}
 
+}
+.contenedor-boton {
+    display: flex;
+    justify-content: center;  /* Centra el botón horizontalmente */
+    align-items: center;      /* Centra el botón verticalmente */
+}
 button:hover {
     background-color: #45a049;
 }
@@ -141,4 +140,35 @@ nav a {
 }
 body {
 background-size: auto 1298px;
+}
+#solicitar-buget {
+    border-radius: 50px;
+    
+}
+button {
+    justify-content: center;
+    align-items: center;
+}
+.service-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: auto auto; /* Dos filas */
+    gap: 5px; /* Espacio entre los bloques */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    padding: 15px;
+}
+.card p {
+text-align:center ;
+font-size: 15px;
+}
+.card h3 {
+    text-align: center;
+    font-size: 25px;
+}
+#contenido {
+    font-size: 23px;
+    margin-top: -50px;
+    background-color: rgba(173, 216, 230, 0.3);
+    border-radius: 15px;
 }
